@@ -56,10 +56,11 @@ public class Day3 {
         try {
             List<String> lines = Files.readAllLines(Utils.getJarResourcesPath().resolve(test ? "day3/test_input.txt" : "day3/input.txt"));
 
+            int[] digits = new int[12];
+            int[] digitsIdxs = new int[12];
+
             for (String line : lines) {
-                int[] digits = new int[12];
                 Arrays.fill(digits, -1);
-                int[] digitsIdxs = new int[12];
                 Arrays.fill(digitsIdxs, -1);
 
                 for (int digitIterIdx = 0; digitIterIdx < 12; ++digitIterIdx) {
