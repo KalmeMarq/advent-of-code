@@ -28,6 +28,10 @@ package io.github.kalmemarq.adventofcode;
     Day 7
         part 1: 1535
         part 2: 4404709551015
+
+    Day 8
+        part 1: 69192
+        part 2: 7264308110
  */
 
 public class Main {
@@ -80,6 +84,13 @@ public class Main {
         start = System.currentTimeMillis();
         Day7.part1(false);
         Day7.part2(false);
+        end = System.currentTimeMillis();
+        IO.println("Took: " + (end - start) + "ms");
+
+        IO.println("\nDay 8");
+        start = System.currentTimeMillis();
+        Day8.part1(false);
+        Day8.part2(false);
         end = System.currentTimeMillis();
         IO.println("Took: " + (end - start) + "ms");
     }
